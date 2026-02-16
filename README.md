@@ -9,12 +9,12 @@ Built with Python, Ollama (LLaMA 3), LangChain, and Streamlit.
 
 ## 🔗 Deployment
 
-### 🚀 Live Demo
+### ✨ Live Demo
 
-🔗 **[Quick demo on Streamlit](https://streamlit.io/](https://resume-ai-agent-ibesnexhzmikbqmryfkg7i.streamlit.app )**  
+- 🖱️ **[Try It](https://streamlit.io/](https://resume-ai-agent-ibesnexhzmikbqmryfkg7i.streamlit.app )**  
  
 
-🐳 **Dockerized production version:** Currently in progress…
+- 🐳 **Dockerized production version:** Currently in progress…
 
 ---
 
