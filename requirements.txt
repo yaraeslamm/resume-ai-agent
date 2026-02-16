@@ -5,8 +5,7 @@ ollama
 pdfplumber
 sentence-transformers 
 faiss-cpu
-openai-whisper 
-pyttsx3 
+openai-whisper
 edge-tts
 sounddevice
 numpy
