@@ -1,6 +1,6 @@
 import streamlit as st
 import whisper
-import pyttsx3
+# import pyttsx3
 import tempfile
 import edge_tts
 import asyncio
@@ -11,7 +11,7 @@ def load_whisper():
 
 model = load_whisper()
 # model = whisper.load_model("base") #speech to text
-tts_engine = pyttsx3.init()   #text to speech
+# tts_engine = pyttsx3.init()   #text to speech
 
 # def transcribe_audio(audio_file): # using temp file to handle the uploaded audio file as streamlit provides it as a file-like object
 #     with tempfile.NamedTemporaryFile(delete=False) as tmp:
