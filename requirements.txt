@@ -12,3 +12,4 @@ sounddevice
 numpy
 langchain-groq
 streamlit-audiorecorder
+audio-recorder-streamlit
