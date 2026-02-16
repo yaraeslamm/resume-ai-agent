@@ -10,3 +10,4 @@ pyttsx3
 edge-tts
 sounddevice
 numpy
+langchain_groq

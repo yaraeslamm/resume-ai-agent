@@ -21,4 +21,6 @@ Resume:
 {resume_text}
 """
     response = llm.invoke(prompt)
+    if hasattr(response, "content"):
+      return response.content
     return response
