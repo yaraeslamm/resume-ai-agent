@@ -11,3 +11,4 @@ edge-tts
 sounddevice
 numpy
 langchain-groq
+streamlit-audiorecorder
