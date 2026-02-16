@@ -1,15 +1,30 @@
 # CareerPilot AI 🚀
 
-CareerPilot AI is a web app that helps users improve their resume, compare it to a job description, and practice mock interviews using a local LLM.
+CareerPilot AI is a LLM-powered web application that helps users improve their resume, compare it to a job description, and practice mock interviews using a local LLM.
 
 Built with Python, Ollama (LLaMA 3), LangChain, and Streamlit.
 
 
 ---
 
-## 🔗 Live Demo
+## 🔗 Deployment
 
-[Add your deployment link here]
+### 🚀 Live Demo
+
+🔗 **[Quick demo on Streamlit](https://streamlit.io/](https://resume-ai-agent-ibesnexhzmikbqmryfkg7i.streamlit.app )**  
+ 
+
+🐳 **Dockerized production version:** Currently in progress…
+
+---
+
+### 🤖 Model Variants
+
+- **Cloud Streamlit Demo:** Uses **Llama 3.1 8B Instant** via **Groq** hosted inference (optimized for fast, responsive interactions).
+- **Docker Version:** Runs a local **LLaMA 3** model using **Ollama**.
+- **Local Development:** Fully local execution powered by **Ollama** (see the [Run Locally](#-run-locally) section for setup instructions).
+
+
 
 ---
 
@@ -62,20 +77,43 @@ The system emphasizes structured outputs, controlled prompting, and non-hallucin
 
 ## 💻 Run Locally
 
-1. Install dependencies:
+Follow these steps to run the project locally using Ollama-based inference:
+
+### 1️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-2.Start Ollama:
+
+### 2️⃣ Start Ollama and Pull LLaMA 3
+
 ```bash
 ollama run llama3
 ```
 
-3.Run the app:
+### 3️⃣ Update the LLM Configuration
+
+Remove the Groq-related code and add:
+
+```python
+from langchain_community.llms import Ollama
+```
+
+Initialize the model:
+
+```python
+llm = Ollama(model="llama3")
+```
+
+### 4️⃣ Run the App
+
 ```bash
 streamlit run app.py
 ```
+
+Your application should now be running locally with a fully local LLaMA 3 model powered by Ollama.
+
+---
 
 ## 🔮 Future Improvements
 
@@ -95,4 +133,8 @@ streamlit run app.py
 
 ## 👩‍💻 Author
 
-Built as a personal portfolio project to demonstrate practical LLM application development, prompt design, and conversational AI workflows.
+Built with curiosity and care by **Yara Elshehawi** 🌱
+
+🌐 [Portfolio](https://yaraeslamm.github.io)
+
+🔗 [LinkedIn](https://www.linkedin.com/in/yara-eslam-877421212/)
