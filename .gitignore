@@ -1,3 +1,4 @@
 .vscode/
 resumevenv/
 __pycache__/
+.env

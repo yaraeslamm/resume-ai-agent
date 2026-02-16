@@ -1,0 +1,12 @@
+streamlit 
+langchain 
+langchain-community 
+ollama 
+pdfplumber
+sentence-transformers 
+faiss-cpu
+openai-whisper 
+pyttsx3 
+edge-tts
+sounddevice
+numpy
