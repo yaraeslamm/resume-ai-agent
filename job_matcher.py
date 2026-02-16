@@ -49,5 +49,6 @@ Use it as supporting signal but perform your own reasoning.
 """
 
     response = llm.invoke(prompt)
-
+    if hasattr(response, "content"):
+      return similarity_score, response.content
     return similarity_score, response

@@ -62,7 +62,8 @@ Next Question:
         prompt=prompt,
         verbose=False
     )
-
+    if hasattr(conversation, "output"):
+      return conversation.output
     return conversation
 
 #     system_prompt = """
